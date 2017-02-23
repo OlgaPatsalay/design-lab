@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body, div, *:before, *:after, header, footer, p, li, ul, img {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+.row {
+    width: 100%;
+    text-align: center;
+}
+.row-cont {
+
+    max-width: 903px;
+    margin: 0 auto;
+}
+header {
+    background: #abb6ca url("../images/bg-hero.jpg") 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+}
+header .row-cont {
+    padding-top: 283px;
+    padding-bottom: 113px;
+}
+.header-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.row-about {
+    padding-top: 155px;
+}
+.row-about-inner {
+    margin-bottom: 155px;
+    width: 100%;
+    border: solid #3c3c3c;
+    border-width: 0 2px 2px 2px;
+    position: relative;
+    padding: 70px 173px 20px 173px;
+}
+.row-about-title,
+.row-services-title,
+.row-whatWeDo-title {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    line-height: 0;
+
+
+    /*-webkit-transform: translateY(-50%);*/
+    /*-moz-transform: translateY(-50%);*/
+    /*-ms-transform: translateY(-50%);*/
+    /*-o-transform: translateY(-50%);*/
+    /*transform: translateY(-50%);*/
+
+}
+.row-about-title:before,
+.row-services-title:before,
+.row-whatWeDo-title:before {
+    content: "";
+    width: 26%;
+    height: 2px;
+    background-color: #3c3c3c;
+    left: -2px;
+    position: absolute;
+}
+.row-about-title:after,
+.row-services-title:after,
+.row-whatWeDo-title:after {
+    content: "";
+    width: 26%;
+    height: 2px;
+    background-color: #3c3c3c;
+    right: -2px;
+    position: absolute;
+}
+.row-about-text {
+    font-weight: 300;
+    line-height: 24px;
+}
+.row-services {
+    background: #abb6ca url("../images/bg-services.jpg") 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 109px;
+    margin-bottom: 100px;
+}
+.row-services-inner {
+    width: 100%;
+    border: solid #fff;
+    border-width: 0 2px 2px 2px;
+    position: relative;
+    padding: 70px 173px 20px 173px;
+}
+.row-services-title:before,
+.row-services-title:after {
+    background-color: #fff;
+}
+.row-services-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+.row-whatWeDo {
+    margin-bottom: 155px;
+    width: 100%;
+    border: solid #3c3c3c;
+    border-width: 0 2px 2px 2px;
+    position: relative;
+    padding: 70px 173px 20px 173px;
+}
+.row-whatWeDo-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.whatWeDo-element {
+    padding-top: 70px;
+}
+.work-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.work-list li {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.work-list li:hover a {
+    opacity: 0.8;
+}
+.work-list a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.work-list li {
+    width: 28.54%;
+    margin-bottom: 0.57%;
+}
+.work-list li:nth-child(3n-1) {
+    width: 41.77%;
+    margin-left: 0.575%;
+    margin-right: 0.575%;
+}
+.work-list img {
+    width: 100%;
+    height: auto;
+}
+.work-list-name {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+
+@media screen and (max-width: 940px) {
+    .row {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .ourWorks .work-list li {
+        width: 100%;
+        display: block;
+        margin: 0.57% auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .row-cont {
+        padding: 20px;
+    }
+    .row-about-title:before,
+    .row-services-title:before,
+    .row-whatWeDo-title:before,
+    .row-about-title:after,
+    .row-services-title:after,
+    .row-whatWeDo-title:after {
+        width: 14%;
+    }
+}
+
+
