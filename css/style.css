@@ -203,6 +203,17 @@ header .row-cont {
 }
 
 @media screen and (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    header .row-cont {
+        padding-top: 50px;
+    }
+
+
     .row {
         padding-right: 5px;
         padding-left: 5px;
@@ -218,6 +229,7 @@ header .row-cont {
     .row-whatWeDo-title:after {
         width: 14%;
     }
+
 }
 
 
