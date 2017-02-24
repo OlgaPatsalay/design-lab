@@ -9,6 +9,7 @@ body {
     font-family: Lato, Arial, sans-serif;
     font-size: 16px;
     color: #3c3c3c;
+    min-width: 300px;
 }
 h1, h2, h3 {
     text-transform: uppercase;
@@ -62,7 +63,8 @@ header .row-cont {
 }
 .row-about-title,
 .row-services-title,
-.row-whatWeDo-title {
+.row-whatWeDo-title,
+.row-contact-us-title {
     position: absolute;
     display: block;
     width: 100%;
@@ -81,7 +83,8 @@ header .row-cont {
 }
 .row-about-title:before,
 .row-services-title:before,
-.row-whatWeDo-title:before {
+.row-whatWeDo-title:before,
+.row-contact-us-title:before{
     content: "";
     width: 26%;
     height: 2px;
@@ -91,7 +94,8 @@ header .row-cont {
 }
 .row-about-title:after,
 .row-services-title:after,
-.row-whatWeDo-title:after {
+.row-whatWeDo-title:after,
+.row-contact-us-title:after {
     content: "";
     width: 26%;
     height: 2px;
@@ -165,7 +169,6 @@ header .row-cont {
     width: 100%;
     height: 100%;
 }
-
 .work-list li {
     width: 28.54%;
     margin-bottom: 0.57%;
@@ -188,32 +191,88 @@ header .row-cont {
     bottom: 30px;
     left: 40px;
 }
-
+.contact-us {
+    padding-top: 115px;
+}
+.row-contact-us-text {
+    line-height: 26px;
+}
+.contact-us {
+    margin-bottom: 50px;
+    margin-top: 100px;
+    width: 100%;
+    border: solid #3c3c3c;
+    border-width: 0 2px 2px 2px;
+    position: relative;
+    padding: 70px 173px 20px 173px;
+}
+.row-contact-us-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    background-color:  #3c3c3c;
+    width: 391px;
+    height: 54px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 54px;
+    margin: 20px auto;
+}
+.row-contact-us-btn:hover {
+    -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+}
+.row-contact-us-btn:active {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+}
+.copyright {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.copyright a {
+    color: #3c3c3c;
+    text-decoration: none;
+    margin: 5px;
+}
+a {
+    transition: all .1s ease-in;
+}
 
 @media screen and (max-width: 940px) {
     .row {
         padding-right: 20px;
         padding-left: 20px;
     }
+}
+@media screen and (max-width: 880px) {
     .ourWorks .work-list li {
         width: 100%;
         display: block;
         margin: 0.57% auto;
     }
 }
-
 @media screen and (max-width: 700px) {
     h1 {
         font-size: 30px;
     }
-    h2 {
+    h2, .work-list-name {
         font-size: 25px;
     }
     header .row-cont {
         padding-top: 50px;
     }
-
-
+    .ourWorks .work-list li {
+        width: 100%;
+        display: block;
+        margin: 0.57% auto;
+    }
     .row {
         padding-right: 5px;
         padding-left: 5px;
@@ -224,12 +283,14 @@ header .row-cont {
     .row-about-title:before,
     .row-services-title:before,
     .row-whatWeDo-title:before,
+    .row-whatWeDo-title:after,
     .row-about-title:after,
     .row-services-title:after,
-    .row-whatWeDo-title:after {
+    .row-contact-us-title:before,
+    .row-contact-us-title:after {
         width: 14%;
     }
-
+    .row-contact-us-btn {
+        width: 250px;
+    }
 }
-
-
