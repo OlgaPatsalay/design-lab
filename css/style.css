@@ -245,6 +245,23 @@ a {
     transition: all .1s ease-in;
 }
 
+/*стилизация svg*/
+.svg {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.svg .cls-4, .svg .cls-3 {
+    fill: #3c3c3c;
+}
+.svg path {
+    stroke: #3c3c3c;
+}
+.svg .cls-1, .svg .cls-2 {
+    fill: none;
+    stroke-width: 2px;
+}
+
 @media screen and (max-width: 940px) {
     .row {
         padding-right: 20px;
